@@ -1,0 +1,5 @@
+// src/utils/quotes.js
+
+const quotesByEmotion = { sad: [ '„To, co nas nie zabije, czyni nas silniejszymi.” – Friedrich Nietzsche', '„Po każdej burzy wychodzi słońce.” – Haruki Murakami', '„Nigdy nie rezygnuj z czegoś, o czym myślisz każdego dnia.” – Winston Churchill' ], fear: [ '„Odwaga to nie brak strachu, lecz działanie pomimo niego.” – Nelson Mandela', '„Zawsze wydaje się, że coś jest niemożliwe, dopóki nie zostanie zrobione.” – Nelson Mandela', '„Nie bój się porażki. Bój się nie próbować.” – Michael Jordan' ], neutral: [ '„Codziennie rób jedną rzecz, która Cię przeraża.” – Eleanor Roosevelt', '„Największe ryzyko to nie podejmować żadnego ryzyka.” – Mark Zuckerberg', '„Twoje życie staje się lepsze tylko, gdy Ty stajesz się lepszy.” – Brian Tracy' ] };
+
+export function getMotivationalQuote(emotion = 'neutral') { const quotes = quotesByEmotion[emotion] || quotesByEmotion.neutral; return quotes[Math.floor(Math.random() * quotes.length)]; }
