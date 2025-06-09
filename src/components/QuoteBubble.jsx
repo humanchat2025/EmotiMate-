@@ -1,4 +1,15 @@
-// src/components/QuoteBubble.jsx
-
-export default function QuoteBubble({ text }) { return ( <div className="my-3 p-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-xl shadow-md text-sm italic max-w-[85%] mx-auto animate-fade-in"> {text} </div> ); }
-
+export default function QuoteBubble({ text }) {
+  return (
+    <blockquote
+      style={{
+        borderLeft: '4px solid #ccc',
+        paddingLeft: '10px',
+        color: '#666',
+        margin: '10px 0',
+        fontStyle: 'italic',
+      }}
+    >
+      {text}
+    </blockquote>
+  );
+}
