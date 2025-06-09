@@ -1,9 +1,9 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import MessageBubble from '@/components/MessageBubble';
-import TypingText from '@/components/TypingText';
-import splitResponse from '@/utils/splitResponse';
+import MessageBubble from '../../components/MessageBubble';
+import TypingText from '../../components/TypingText';
+import splitResponse from '../../utils/splitResponse';
 import { Volume2, VolumeX } from 'lucide-react';
 import QuoteBubble from './QuoteBubble';
 import { v4 as uuidv4 } from 'uuid';

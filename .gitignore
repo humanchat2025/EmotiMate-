@@ -1,15 +1,36 @@
-# Ignoruj katalogi robocze
-node_modules
-.next
-.out
-.cache
-dist
+# 📁 Katalogi robocze
+node_modules/
+.next/
+out/
+.cache/
+dist/
 
-# Ignoruj logi i śmieci
+# 🧪 Testy i lokalne buildy
+coverage/
+playwright-report/
+*.test.ts
+*.spec.ts
+
+# 🛠 Pliki środowiskowe
+.env
+.env.local
+.env.development
+.env.production
+*.local
+
+# 💾 Logi i śmieci
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-.env
-*.local
 .DS_Store
+*.log
+
+# 📦 Supabase (opcjonalnie – tylko jeśli nie trzymasz ich w repo)
+supabase/.temp/
+supabase/migrations/.temp/
+
+# 🧙‍♂️ Systemowe lub edytorowe
+.vscode/
+.idea/
+*.swp
