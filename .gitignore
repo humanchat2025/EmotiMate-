@@ -1,0 +1,15 @@
+# Ignoruj katalogi robocze
+node_modules
+.next
+.out
+.cache
+dist
+
+# Ignoruj logi i śmieci
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+*.local
+.DS_Store
